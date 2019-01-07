@@ -1,1 +1,57 @@
 # 7-Billion-Humans
+
+-- 7 Billion Humans (2212:2214M) --
+-- 13: Injection Sites 2 --
+
+pickup s
+a:
+b:
+if e != wall:
+	if e == datacube and
+	 c == nothing:
+		drop
+	endif
+	step e
+	jump b
+else:
+	step s
+endif
+c:
+if w != wall:
+	if w == datacube and
+	 c == nothing:
+		drop
+	endif
+	step w
+	jump c
+else:
+	step s
+endif
+jump a
+
+
+-- 7 Billion Humans (2212:2214M) --
+-- 6: Little Exterminator 1 --
+
+step s
+step sw
+step sw
+step se
+step e
+step se
+step s
+step s
+pickup c
+
+
+
+-- 7 Billion Humans (2212:2214M) --
+-- 7: Collation Station --
+
+a:
+step s
+pickup c
+if s != hole:
+	jump a
+endif
+drop
